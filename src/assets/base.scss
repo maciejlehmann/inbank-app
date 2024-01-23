@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+    --color-1: #413c3c;
+    --color-2: #9c9c9c;
+    --color-3: #2b0a57;
+    --color-4: #f3eefb;
+    --color-5: #f8f5fc;
+    --color-6: #fdfdfd;
+    --color-7: #eb5757;
+    --color-8: #5948ad;
+    --color-9: #dedede;
+    --color-10: #3a156c;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    background: var(--color-6);
+}
+
+.color-1-label {
+    color: var(--color-1);
+}
+
+.color-2-label {
+    color: var(--color-2);
+}
+
+.color-6-label {
+    color: var(--color-6);
+}
+
+.color-8-label {
+    color: var(--color-8);
+}
+
+.color-9-label {
+    color: var(--color-9);
+}
+
+.error-message {
+    color: var(--color-7);
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.amount-input,
+.amount-input:active,
+.amount-input:focus {
+    width: 85px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid var(--color-9);
+    color: var(--color-6);
+    font-size: 20px;
+    text-align: center;
+
+    &:hover {
+        border-width: 1px;
+    }
+
+    &.error-state {
+        border-color: var(--color-7);
+    }
+}
+
+.months-input,
+.months-input:active,
+.months-input:focus {
+    width: 90px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid var(--color-9);
+    color: var(--color-6);
+    font-size: 18px;
+    text-align: center;
+
+    &:hover {
+        border-width: 1px;
+    }
+}
+
+.form-is-active .p-inputtext:not(.p-dropdown-label),
+.form-is-active .p-dropdown {
+    border-color: var(--color-3);
+    box-shadow: inset 0 0 0 1px var(--color-3),
+    inset 0 0 0 1px var(--color-3),
+    inset 0 0 0 1px var(--color-3),
+    inset 0 0 0 1px var(--color-3);
+}
